@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100);
+html {
+  background:  url(file:///android_res/drawable/retaurant.gif) no-repeat center center fixed;
+  background-size: cover;
+}
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 5em;
+  margin: .4em .4em;
+
+}
+body {
+    height: 140%;
+    width: 80%%;
+   color: red;
+}

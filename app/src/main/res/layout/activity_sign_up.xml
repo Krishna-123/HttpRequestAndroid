@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:hint="response!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:id="@+id/response"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:ems="8"
+        android:text="Krishna"
+        android:textAlignment="center"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/response"
+        android:layout_alignStart="@+id/response" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="8"
+        android:text="krsh@gmail.com"
+        android:hint="enter email"
+        android:textAlignment="center"
+        android:id="@+id/email"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <Button
+        android:text="submit!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="158dp"
+        android:id="@+id/button3"
+        android:onClick="post"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/confirmPass"
+        android:layout_alignStart="@+id/confirmPass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="8"
+        android:textAlignment="center"
+        android:hint="Password"
+        android:text="12345"
+        android:id="@+id/password"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="8"
+        android:text="12345"
+        android:hint="confirm Password"
+        android:textAlignment="center"
+        android:id="@+id/confirmPass"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter the url"
+        android:ems="10"
+        android:id="@+id/url"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp" />
+
+    <Button
+        android:text="setUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seturl"
+        android:onClick="setUrl"
+        android:layout_alignTop="@+id/url"
+        android:layout_toRightOf="@+id/email"
+        android:layout_toEndOf="@+id/email" />
+</RelativeLayout>
